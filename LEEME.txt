@@ -1,0 +1,16 @@
+MartyDev - Portafolio One Page (Bootstrap 5.3, sin build)
+
+Estructura:
+  index.html                  -> toda la pagina (HTML + CSS + JS)
+  assets/dev.png              -> tu logo original (header y footer)
+  assets/logo-martydev.svg    -> logo vectorial (hero y favicon)
+
+Publicar en GitHub Pages:
+  1. Sube index.html y la carpeta assets/ a la raiz de un repositorio.
+  2. Settings > Pages > Source: Deploy from a branch > main / (root).
+  3. Espera 1-2 minutos y abre la URL que te muestra GitHub.
+
+Donde editar:
+  - WhatsApp: busca "18496517209" en index.html.
+  - LinkedIn: busca "linkedin.com/in/" en index.html.
+  - Proyectos: seccion id="proyectos" (tarjetas "Proximamente").
