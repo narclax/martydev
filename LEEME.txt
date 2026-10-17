@@ -14,3 +14,7 @@ Donde editar:
   - WhatsApp: busca "18496517209" en index.html.
   - LinkedIn: busca "linkedin.com/in/" en index.html.
   - Proyectos: seccion id="proyectos" (tarjetas "Proximamente").
+
+Vista previa al compartir (WhatsApp / LinkedIn):
+  - En index.html reemplaza "https://TU-USUARIO.github.io/TU-REPO/" por la URL real de tu GitHub Pages (3 lugares: og:url, og:image y twitter:image).
+  - La imagen es assets/og-image.jpg (1200x630).

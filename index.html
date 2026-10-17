@@ -3,12 +3,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MartyDev — Jose Miguel Marty Collado | Odoo · Laravel · Web</title>
 <meta name="description" content="Desarrollo en Odoo (v13–v19), Laravel y sitios web. Más de 20 años creando soluciones web a la medida.">
+<meta name="theme-color" content="#06080e">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_DO"><meta property="og:site_name" content="MartyDev">
+<meta property="og:title" content="MartyDev — Odoo, Laravel y Web a la medida">
+<meta property="og:description" content="Más de 20 años creando soluciones web. Expertos en Odoo v13–v19, Python, Laravel y sitios web.">
+<meta property="og:url" content="https://TU-USUARIO.github.io/TU-REPO/">
+<meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/assets/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="MartyDev — Odoo, Laravel y Web a la medida"><meta name="twitter:image" content="https://TU-USUARIO.github.io/TU-REPO/assets/og-image.jpg">
 <link rel="icon" href="assets/logo-martydev.svg">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
 :root{--bg:#06080e;--bg2:#0a0f1c;--fg:#eef2fb;--mut:#8a97ad;--b:#2f7bff;--c:#5ad1ff;--ln:#1a2440;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace;--sans:'Plus Jakarta Sans',system-ui,sans-serif}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-stopped{overflow:clip}
 body{background:var(--bg);color:var(--fg);font-family:var(--sans);overflow-x:hidden}
 a{text-decoration:none}
 /* header */
@@ -97,7 +105,17 @@ footer{border-top:1px solid var(--ln);padding:36px 0 calc(36px + env(safe-area-i
 .wa{position:fixed;z-index:60;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 30px #25d36688;transition:.3s}
 .wa:hover{transform:scale(1.1)}.wa:before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:pl 2s infinite}
 @keyframes pl{to{transform:scale(1.7);opacity:0}}
-.rv{opacity:0;transform:translateY(34px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.flow{position:relative;margin-top:56px;--p:0}.fl-line{position:absolute;left:0;right:0;top:23px;height:2px;background:var(--ln)}
+.fl-line i{position:absolute;left:0;top:0;bottom:0;width:calc(var(--p)*100%);background:linear-gradient(90deg,var(--b),var(--c));box-shadow:0 0 14px var(--b)}
+.stp{position:relative;opacity:.35;transition:opacity .5s;height:100%}.stp.act{opacity:1}
+.nd{width:48px;height:48px;border-radius:50%;background:var(--bg);border:2px solid var(--ln);display:grid;place-items:center;font:700 14px var(--mono);color:var(--mut);transition:.5s;position:relative;z-index:1}
+.stp.act .nd{border-color:var(--c);color:#fff;background:#0f2150;box-shadow:0 0 22px #2f7bff88}
+.sp{margin-top:22px;padding:24px;border:1px solid var(--ln);border-radius:20px;background:linear-gradient(180deg,#0b1222,#080c16);height:calc(100% - 70px);transition:border-color .4s}.stp.act .sp{border-color:#2f7bff66}
+.sp svg{color:var(--c);margin-bottom:14px}.sp h3{font:800 1.3rem var(--sans);text-transform:uppercase;letter-spacing:.01em}.sp p{color:var(--mut);font-size:15px;line-height:1.65;margin:10px 0 14px}.sp .chip{display:inline-block;margin:0 6px 6px 0}
+@media(max-width:991px){.fl-line{left:23px;right:auto;top:0;bottom:0;width:2px;height:auto}.fl-line i{width:100%;height:calc(var(--p)*100%);background:linear-gradient(180deg,var(--b),var(--c))}.stp{display:flex;gap:16px;align-items:flex-start;height:auto}.sp{margin-top:0;flex:1;height:auto}}
+.rv.in{opacity:1;transform:none}
+.rv:not(.in){transition-delay:0s}
+.tc .tw{white-space:nowrap}.tc .tw span{position:relative;color:#364260;transition:color .25s}.tc .tw span.lit{color:#fff}.tc .tw span.cur:after{content:"";position:absolute;right:-2px;top:.12em;bottom:.12em;width:2px;background:var(--c);animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;transition-duration:.01s!important}.rv{opacity:1;transform:none}}
 .up,.svc h3,.xp h4,.pj b{text-transform:uppercase}.up{font-size:clamp(1.8rem,4.2vw,3.4rem);letter-spacing:-.02em}.svc h3,.xp h4,.pj b{letter-spacing:.01em}
 .xp .chip{display:inline-block;margin:12px 6px 0 0}
@@ -161,7 +179,7 @@ footer{border-top:1px solid var(--ln);padding:36px 0 calc(36px + env(safe-area-i
 
 <section class="s" id="sobre"><div class="container"><div class="row g-5 align-items-end">
 <div class="col-lg-7 rv"><div class="eyebrow">Nosotros</div><h2 class="dt">Convertimos procesos de negocio en <em>sistemas web</em> que funcionan.</h2></div>
-<div class="col-lg-5 rv" style="--d:.15s"><p class="lead2">Somos un equipo de desarrollo liderado por Jose Miguel Marty Collado, con más de 20 años de experiencia en telecomunicaciones y en la industria de energía y petróleo. Creamos soluciones web que mejoran la gestión de cada área, con buenos tiempos de entrega y el menor costo para la organización, siempre bajo lineamientos de UI/UX y SEO.</p></div></div>
+<div class="col-lg-5 rv" style="--d:.15s"><p class="lead2 tc">Somos un equipo de desarrollo liderado por Jose Miguel Marty Collado, con más de 20 años de experiencia en telecomunicaciones y en la industria de energía y petróleo. Creamos soluciones web que mejoran la gestión de cada área, con buenos tiempos de entrega y el menor costo para la organización, siempre bajo lineamientos de UI/UX y SEO.</p></div></div>
 <div class="row g-4 mt-4">
 <div class="col-6 col-lg-3 rv"><div class="stat"><b data-to="20" data-s="+">0</b><span>años de experiencia</span></div></div>
 <div class="col-6 col-lg-3 rv" style="--d:.1s"><div class="stat"><b data-to="10" data-s="+">0</b><span>portales web desarrollados</span></div></div>
@@ -174,6 +192,8 @@ footer{border-top:1px solid var(--ln);padding:36px 0 calc(36px + env(safe-area-i
 <div class="col-lg-4 rv"><div class="svc"><div class="num">01</div><h3>Odoo</h3><p>Desarrollo y personalización de módulos, migraciones entre versiones (13 a 19), adaptación de modelos y controladores según las reglas de cada cliente, y reportes personalizados (facturas, cotizaciones, conduces) en QWeb con la línea gráfica de cada empresa.</p><div><span class="chip">Python</span> <span class="chip">QWeb</span> <span class="chip">Migraciones</span></div></div></div>
 <div class="col-lg-4 rv" style="--d:.12s"><div class="svc"><div class="num">02</div><h3>Laravel y backend</h3><p>Sistemas a medida, desde gestión simple hasta CRM complejos, con control completo de Modelo, Vistas y Controladores. También CodeIgniter y otros frameworks PHP.</p><div><span class="chip">Laravel</span> <span class="chip">PHP</span> <span class="chip">APIs</span></div></div></div>
 <div class="col-lg-4 rv" style="--d:.24s"><div class="svc"><div class="num">03</div><h3>Sitios web y UI</h3><p>Portales Mobile First con Bootstrap, Material y Flex, WordPress con temas y plugins a la medida, SEO y diseño gráfico en Photoshop.</p><div><span class="chip">HTML / CSS</span> <span class="chip">WordPress</span> <span class="chip">SEO</span></div></div></div></div></div></section>
+
+<section class="s" id="proceso" style="background:linear-gradient(180deg,var(--bg2),var(--bg))"><div class="container"><div class="eyebrow rv">Proceso</div><h2 class="dt up rv">Cómo <em>trabajamos</em></h2><p class="lead2 rv" style="max-width:56ch">Un flujo claro de principio a fin, para que sepas qué sigue en cada etapa.</p><div class="flow" id="flow"><div class="fl-line"><i></i></div><div class="row g-4"><div class="col-12 col-lg-3"><div class="stp"><div class="nd">01</div><div class="sp"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><h3>Análisis</h3><p>Interpretamos los requerimientos de cada cliente y diagramamos los flujos. Cada empresa maneja procesos distintos, y partimos de ahí.</p><span class="chip">Requerimientos</span><span class="chip">Flujos</span></div></div></div><div class="col-12 col-lg-3"><div class="stp"><div class="nd">02</div><div class="sp"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5-9 5-9-5 9-5zM3 12l9 5 9-5M3 17l9 5 9-5"/></svg><h3>Diseño y stack</h3><p>Seleccionamos el stack, asignamos recursos y definimos el esquema de tiempos de entrega según lo que necesites.</p><span class="chip">Stack</span><span class="chip">Tiempos</span></div></div></div><div class="col-12 col-lg-3"><div class="stp"><div class="nd">03</div><div class="sp"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg><h3>Desarrollo</h3><p>Modelos de datos, controladores según tus reglas de negocio, reportes con tu línea gráfica y el front-end de cada sistema.</p><span class="chip">Back-end</span><span class="chip">Front-end</span></div></div></div><div class="col-12 col-lg-3"><div class="stp"><div class="nd">04</div><div class="sp"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3zM8.5 12l2.5 2.5 4.5-5"/></svg><h3>Calidad y entrega</h3><p>Pruebas de estrés y revisión de código antes de entregar, más instructivos de uso para que tu equipo se apropie del sistema.</p><span class="chip">Crash testing</span><span class="chip">Instructivos</span></div></div></div></div></div></div></section>
 
 <section class="s" id="experiencia"><div class="container">
 <div class="eyebrow rv">Experiencia</div><h2 class="dt up rv">Trayectoria <em>en producción</em></h2>
@@ -210,7 +230,9 @@ footer{border-top:1px solid var(--ln);padding:36px 0 calc(36px + env(safe-area-i
 <a class="wa" href="https://wa.me/18496517209?text=Hola%2C%20vi%20su%20portafolio" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" fill-rule="evenodd"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-.9 1.1-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 4.9c2 .8 2.8.9 3.8.7a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg></a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
 <script>
+(()=>{
 const $=s=>document.querySelector(s),S=[...document.querySelectorAll('.sc')],D=3000,N=S.length;let i=0,t0=performance.now(),vis=true;
 function go(n){i=n;document.body.dataset.s=n;S.forEach((s,k)=>s.classList.toggle('on',k===n))}
 go(0);setInterval(()=>{if(vis){go((i+1)%N);t0=performance.now()-i*D}},D);
@@ -222,9 +244,19 @@ const nav=$('#nav');addEventListener('scroll',()=>nav.classList.toggle('stuck',s
 document.querySelectorAll('#mn a').forEach(a=>a.onclick=()=>{const m=$('#mn');m.classList.contains('show')&&bootstrap.Collapse.getOrCreateInstance(m).hide()});
 const m=$('.mq div');m.innerHTML=m.innerHTML.repeat(4);
 document.querySelectorAll('.svc').forEach(e=>e.addEventListener('pointermove',v=>{const r=e.getBoundingClientRect();e.style.setProperty('--mx',v.clientX-r.left+'px');e.style.setProperty('--my',v.clientY-r.top+'px')}));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');const b=e.target.querySelector('[data-to]');if(b){const t=+b.dataset.to,s=b.dataset.s||'',st=performance.now();(function u(n){const k=Math.min((n-st)/1400,1);b.textContent=Math.round(t*(1-Math.pow(1-k,3)))+s;k<1&&requestAnimationFrame(u)})(st)}io.unobserve(e.target)}),{threshold:.15});
+const cnt=b=>{cancelAnimationFrame(b._r);const t=+b.dataset.to,s=b.dataset.s||'',st=performance.now();(function u(n){const k=Math.min((n-st)/1400,1);b.textContent=Math.round(t*(1-Math.pow(1-k,3)))+s;if(k<1)b._r=requestAnimationFrame(u)})(st)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{const t=e.target,b=t.querySelector('[data-to]');if(e.isIntersecting){t.classList.add('in');b&&cnt(b)}else{t.classList.remove('in');if(b){cancelAnimationFrame(b._r);b.textContent='0'+(b.dataset.s||'')}}}),{threshold:.15,rootMargin:'0px 0px -6% 0px'});
 document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+const tp=$('.tc');
+if(tp){const tx=tp.textContent.trim();tp.textContent='';tp.setAttribute('aria-label',tx);const ws=tx.split(' ');ws.forEach((wd,k)=>{const w=document.createElement('span');w.className='tw';w.setAttribute('aria-hidden','true');[...wd].forEach(q=>{const s=document.createElement('span');s.textContent=q;w.appendChild(s)});tp.appendChild(w);if(k<ws.length-1)tp.appendChild(document.createTextNode(' '))});
+const cs=[...tp.querySelectorAll('.tw span')];let last=-1;
+const upd=()=>{const r=tp.getBoundingClientRect(),vh=innerHeight,s0=vh*.88,s1=vh*.4-r.height;const pr=Math.min(Math.max((s0-r.top)/(s0-s1),0),1),n=matchMedia('(prefers-reduced-motion:reduce)').matches?cs.length:Math.round(pr*cs.length);if(n===last)return;last=n;cs.forEach((q,k)=>{q.classList.toggle('lit',k<n);q.classList.toggle('cur',k===n-1&&n<cs.length)})};
+addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd()}
 const W=[...document.querySelectorAll('.skw')],K=W.map(w=>w.firstElementChild),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
 function stk(){if(rm)return;const vh=innerHeight;W.forEach((w,i)=>{if(i===W.length-1)return;const t=W[i+1].getBoundingClientRect().top,p=Math.min(Math.max(1-t/vh,0),1);K[i].style.transform=`scale(${1-.08*p}) translateY(${-14*p}px)`;K[i].style.filter=`brightness(${1-.6*p})`})}
 addEventListener('scroll',stk,{passive:true});addEventListener('resize',stk);stk();
+if(window.Lenis&&!rm){const L=new Lenis({lerp:.085,wheelMultiplier:.9});(function r(t){L.raf(t);requestAnimationFrame(r)})(0);
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const h=a.getAttribute('href');if(h.length>1){const t=document.querySelector(h);if(t){e.preventDefault();L.scrollTo(t,{offset:-70,duration:1.4})}}}))}
+const fl=$('#flow');if(fl){const st=[...fl.querySelectorAll('.stp')],rq=matchMedia('(prefers-reduced-motion:reduce)').matches;const fu=()=>{const r=fl.getBoundingClientRect(),vh=innerHeight;let p=rq?1:(vh*.8-r.top)/(vh*.25+r.height);p=Math.min(Math.max(p,0),1);fl.style.setProperty('--p',p);st.forEach((s,k)=>s.classList.toggle('act',p>=k/st.length+.03))};addEventListener('scroll',fu,{passive:true});addEventListener('resize',fu);fu()}
+})();
 </script></body></html>
