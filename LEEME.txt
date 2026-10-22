@@ -18,3 +18,8 @@ Donde editar:
 Vista previa al compartir (WhatsApp / LinkedIn):
   - En index.html reemplaza "https://TU-USUARIO.github.io/TU-REPO/" por la URL real de tu GitHub Pages (3 lugares: og:url, og:image y twitter:image).
   - La imagen es assets/og-image.jpg (1200x630).
+
+Idioma ES / EN:
+  - Por defecto: lo ultimo elegido por el visitante; si no hay, el idioma del navegador (ingles = EN, cualquier otro = ES).
+  - Cada texto en ingles vive en el atributo data-en del elemento. Para editar una traduccion, cambia ese atributo.
+  - Si agregas un texto nuevo, copialo asi: <p data-en="English text">Texto en espanol</p>
